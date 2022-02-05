@@ -36,19 +36,6 @@ let questionEightMark;
 let questionNineMark;
 let questionTenMark;
 
-const questionsLength = [
-    questionOneMark,
-    questionTwoMark,
-    questionThreeMark,
-    questionFourMark,
-    questionFiveMark,
-    questionSixMark,
-    questionSevenMark,
-    questionEightMark,
-    questionNineMark,
-    questionTenMark
-]
-
 function getResult(){
     if(correctChoice1.checked){
         
