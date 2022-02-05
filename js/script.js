@@ -108,13 +108,21 @@ function getResult(){
     questionFourMark + questionFiveMark + questionSixMark +
     questionSevenMark + questionEightMark + questionNineMark + questionTenMark
 
-    
+    //Calculate percentage
+
+    let percentage = (score / 20) * 100;
+
 
     const questionTag = document.getElementById("quiz-form")
     questionTag.style.display = "none"
 
-    const resultDiv = document.getElementById("result-div")
+    resultContainer.style.display = "flex"
 
-    resultDiv.innerHTML = `<h2>Your score is ${score}</h2>`
+    const resultDiv = document.getElementById("result-div")
+    const percentDiv = document.getElementById("percent-div")
+
+    resultDiv.innerHTML = `<h2 id="score">Your score is ${score} out of 20</h2>`
+    
+    percentDiv.innerHTML = `<h2 id="score">You have ${percentage}% score</h2>`
 
 }
