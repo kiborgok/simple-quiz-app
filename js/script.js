@@ -14,3 +14,10 @@ const correctChoice7 = document.getElementById("q7-choice1");
 const correctChoice8 = document.getElementById("q8-choice1");
 const correctChoice9 = document.getElementById("q9-choice1");
 const correctChoice10 = document.getElementById("q10-choice1");
+
+//Get submit input and add 'click' event listener
+
+const submit = document.getElementById("submit")
+submit.addEventListener('click');
+
+
