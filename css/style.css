@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 22px;
+    font-family: Montserrat;
 }
 
 body{
@@ -30,6 +32,7 @@ nav{
 
 nav > div > p{
     padding: 10px 20px;
+    font-size: 2em;
 }
 
 .div-form{
@@ -65,16 +68,16 @@ form>div>input{
 #result-container{
     display: flex;
     flex-direction: column;
+    padding-top: 150px;
 }
 
 #result-div{
     display:flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
 }
 
-.try-again{
+.try-again, #submit{
     margin: 10px;
     font-size: 1em;
     font-weight: bold;
@@ -88,7 +91,26 @@ form>div>input{
     border: none;
 }
 
+#percent-div{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#score{
+    color: #6F5106;
+}
+
 footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #19A89F;
-    color: #68FF89;
+    color: #6F5106;
+    height: 80px;
+}
+
+footer > p {
+    color: #6F5106;
+    font-weight: bold;
+    font-size: 1em;
 }
