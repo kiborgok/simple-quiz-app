@@ -36,6 +36,10 @@ let questionEightMark;
 let questionNineMark;
 let questionTenMark;
 
+
+
+//Event handler for displaying results
+
 function getResult(){
     if(correctChoice1.checked){
         
@@ -97,12 +101,50 @@ function getResult(){
 
     //Calculate percentage
 
+    let percentMessage = document.getElementById("retry");
+
     let percentage = (score / 20) * 100;
 
+    //Display various messages depending on percentage score
 
+    if(percentage >= 80){
+        percentMessage.innerHTML = 
+        `
+        <h3 id="percent-msg">You scored excellently.</h3>
+        <button id="home" class="try-again">Back to home</button>
+        `
+    }else if(percentage >= 50 && percentage < 80){
+        percentMessage.innerHTML = 
+        `
+        <h3 id="percent-msg">You scored fairly.</h3>
+        <button id="home" class="try-again">Back to home</button>
+        `
+    }else{
+        percentMessage.innerHTML = 
+        `
+            <h3 id="percent-msg">You scored poorly.</h3>
+            <button id="to-home" class="try-again">Retake test</button>
+        `
+    }
+
+    //Function to take user back to homepage
+    const toHome = document.getElementById("home");
+    const retakeTestBtn = document.getElementById("to-home");
+    
+    if(retakeTestBtn)
+        retakeTestBtn.addEventListener('click', getUserToHomePage)
+    if(toHome)
+        toHome.addEventListener('click', getUserToHomePage)
+
+    function getUserToHomePage(){
+        window.location.replace("index.html")
+    }
+
+    //Hide the questions when submit button is clicked
     const questionTag = document.getElementById("quiz-form")
     questionTag.style.display = "none"
 
+    //Show the result container div
     resultContainer.style.display = "flex"
 
     const resultDiv = document.getElementById("result-div")
