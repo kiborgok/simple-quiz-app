@@ -84,11 +84,15 @@ form>div>input{
     cursor: pointer;
     padding: 16px;
     border-radius: 8px;
-    background-color: #94B4B2;
-    color: #6F5106;
+    background-color: #19A89F;
+    color: blue;
     align-self: center;
-    width: 30%;
+    width: 40%;
     border: none;
+}
+
+#percent-msg{
+    color: #6F5106;
 }
 
 #percent-div{
@@ -107,6 +111,10 @@ footer{
     background-color: #19A89F;
     color: #6F5106;
     height: 80px;
+}
+
+#retry{
+    text-align: center;
 }
 
 footer > p {
