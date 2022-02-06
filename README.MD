@@ -15,6 +15,8 @@
 ## Description
 #### This website allows users to take HTML/CSS/JS multiple choice questions and see their results apone submitting.
 
+#### Link to figma designs: https://www.figma.com/file/6P6LypiYN27wPtQoi1tcKD/Untitled?node-id=0%3A1
+
 ## Setup Requirements
 ### Local machine setup
 * Clone this repository to your preferred location in your machine.
